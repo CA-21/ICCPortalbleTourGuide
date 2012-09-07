@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/media_player_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="532dp" android:layout_height="fill_parent"
+	android:background="@color/solid_black">
+	<!-- <VideoView android:id="@+id/video_surface" android:layout_width="800px" 
+		android:layout_height="480px" android:layout_gravity="center"> </VideoView> -->
+	<!--<RelativeLayout android:layout_y="0px" android:layout_x="0px"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:paddingLeft="-20dp">
+		--><com.yuco.TappableSurfaceView android:id="@+id/video_surface"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+		>
+		</com.yuco.TappableSurfaceView>
+	<!--</RelativeLayout>
+
+	--><RelativeLayout android:id="@+id/panel"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:layout_height="40px"
+			android:layout_width="fill_parent" android:orientation="horizontal"
+			android:background="@color/solid_gray" android:visibility="visible"
+			android:layout_alignParentBottom="true" android:id="@+id/panel_linear">
+			<ToggleButton android:textOn="" android:textOff=""
+				android:id="@+id/Pause" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:background="@drawable/but_pause" />
+			<Button android:id="@+id/Prev" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:background="@drawable/but_prev" />
+
+
+			<TextView android:text="00:00" android:id="@+id/currtime"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+			</TextView>
+			<ProgressBar android:id="@+id/SeekBar"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:progressDrawable="@drawable/myprogressbar_style"
+				android:layout_width="0px" android:layout_weight="1"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:paddingLeft="2px" />
+			<TextView android:text="02:06" android:id="@+id/remaintime"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+			</TextView>
+			<Button android:id="@+id/Next" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:background="@drawable/but_next" />
+			<Button android:text="Chapter" android:id="@+id/Chapter"
+				android:paddingLeft="10dp" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:background="@drawable/but_chapter"
+				android:textColor="@color/solid_white" />
+		</LinearLayout>
+
+		<AbsoluteLayout android:layout_y="0px"
+			android:layout_x="0px" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView android:layout_width="fill_parent" android:id="@+id/BarTop"
+				android:layout_height="wrap_content" android:layout_x="0px"
+				android:layout_y="0px" android:background="@drawable/bar_top"></ImageView>
+		</AbsoluteLayout>
+	</RelativeLayout>
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+</AbsoluteLayout>

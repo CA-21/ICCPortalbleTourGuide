@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.yuco" android:debuggable="true" android:installLocation="internalOnly" android:versionCode="3" android:versionName="2.4">
+	<uses-permission android:name="archos.permission.FULLSCREEN.FULL" />--><!-- fullscreen user permission -->
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.REBOOT"/>
+	<application android:icon="@drawable/icon" android:debuggable="true" android:label="@string/app_name">
+		<activity android:name=".LanguageSelectionView"
+			android:screenOrientation="landscape">
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" /><!-- cannot comment -->
+                <!-- <category android:name="android.intent.category.HOME" />            
+            	<category android:name="android.intent.category.DEFAULT" />          
+            	<category android:name="android.intent.category.MONKEY"/>--> 
+            </intent-filter>
+			</activity>
+			 <!-- Start the Service if applicable on boot -->
+    <receiver android:name="com.yuco.MyStartupIntentReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            <!-- <category android:name="android.intent.category.DEFAULT"></category> -->
+        </intent-filter>
+    </receiver>
+
+		<activity android:name=".ZoneSelectionView"
+			android:screenOrientation="landscape">
+			</activity>
+		<activity android:name=".MediaPlayerClass"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity android:name=".ChapterViewClass"
+			android:screenOrientation="landscape">
+		</activity>
+		<activity android:name="ControlViewActivity"
+			android:screenOrientation="landscape">
+		</activity>
+		<activity android:name="Preferences"
+			android:screenOrientation="landscape">
+		</activity>
+	</application>
+	
+</manifest> 

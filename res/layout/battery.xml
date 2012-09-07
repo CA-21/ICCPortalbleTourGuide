@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="525dp"
+	android:layout_height="fill_parent" >
+	<ScrollView android:id="@+id/scroll" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:id="@+id/battery_view_layout" android:background="@color/solid_gray"
+			android:layout_marginBottom="2dip" android:layout_marginTop="2dip"
+			android:layout_marginLeft="2dip" android:layout_marginRight="2dip">
+
+			<TextView android:id="@+id/batteryLevel" android:textSize="25dip"
+				style="@style/PrefTextView" />
+			<TextView android:text="Set BackLight of the App" style="@style/PrefTextView" />
+			<SeekBar android:id="@+id/backlightcontrol"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_margin="10px" android:max="100" android:progress="50"
+				android:layout_marginBottom="2dip" android:layout_marginTop="2dip"
+				android:layout_marginLeft="2dip" android:layout_marginRight="2dip" />
+			<TextView android:id="@+id/backlightsetting" style="@style/PrefTextView" />
+			<!-- Button  -->
+			<Button android:id="@+id/updatesystemsetting" android:text="Save Brightness setting"
+				style="@style/PrefButton" />
+			<Button android:id="@+id/battery_view_exit" android:text="Language Select"
+				style="@style/PrefButton" />
+			<Button android:id="@+id/battery_view_back" android:text="Zone Select"
+				style="@style/PrefButton" />
+
+			<Button android:id="@+id/battery_view_quit" android:text="Quit"
+				style="@style/PrefButton" />
+			<Button android:id="@+id/battery_view_install" android:text="Update Application"
+				style="@style/PrefButton" />
+		</LinearLayout>
+	</ScrollView>
+</AbsoluteLayout>

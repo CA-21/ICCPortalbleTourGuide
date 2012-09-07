@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout android:id="@+id/AbsoluteLayout01"
+	android:layout_width="525dp" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<ImageView android:layout_y="0dip" android:layout_x="0dip"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:id="@+id/ImageView01" ></ImageView>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:orientation="vertical" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<ImageView android:layout_width="wrap_content" android:id="@+id/BarTop"
+			android:layout_height="wrap_content" android:layout_x="0px"
+			android:layout_y="0px" android:background="@drawable/bar_top"></ImageView>
+		<com.yuco.mygallery
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/gallery" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:fadingEdge="none" />
+		<ImageView android:layout_width="fill_parent" android:id="@+id/BarBottom"
+			android:layout_height="wrap_content" android:layout_x="0px"
+			android:layout_y="300px" android:background="@drawable/bar_bottom"></ImageView>
+	</LinearLayout>	
+	
+	
+
+
+	<Button android:id="@+id/InvisibleButton"
+		android:layout_width="50dp" android:layout_height="50dp"
+		 android:layout_x="0px"
+		android:layout_y="0px" android:background="@drawable/invisible"/><!--
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:orientation="horizontal" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:paddingLeft="10dp">
+		<TextView android:text="Protable Tour Guide" android:id="@+id/zoneviewTitle"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			 ></TextView>
+	</LinearLayout>
+
+
+
+-->
+	<RelativeLayout android:layout_width="wrap_content"
+	android:gravity="left"
+		android:paddingLeft="0dp" android:layout_height="wrap_content"
+		android:layout_y="50dp">
+		<Button android:scaleType="fitStart" android:id="@+id/LeftButton"
+		android:layout_width="138px" android:layout_height="wrap_content"
+		android:background="@drawable/arrow_right" 
+		android:layout_alignParentLeft="true" 
+		 />
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="wrap_content"
+	android:gravity="right"
+		android:paddingRight="0dp" android:layout_height="wrap_content"
+		android:layout_y="50dp">
+		<Button android:scaleType="fitStart" android:id="@+id/RightButton"
+		android:layout_width="138px" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/arrow_left"
+		android:layout_alignParentRight="true" 
+		/>
+	</RelativeLayout>
+</AbsoluteLayout>

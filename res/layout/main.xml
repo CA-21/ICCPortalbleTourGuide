@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/AbsoluteLayout01"
+	android:layout_width="532dp" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView android:gravity="left" android:id="@+id/ImageView01"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:background="@color/solid_light_gray" android:src="@drawable/bg_01">
+	</ImageView>
+	<LinearLayout android:layout_gravity="center"
+		android:layout_x="-27px"
+		android:orientation="horizontal" android:layout_width="280px"
+		android:layout_height="50.25px">
+		<!--
+			<LinearLayout android:layout_x="157px" android:layout_y="116px"
+
+			android:orientation="horizontal" android:layout_width="224px"
+			android:layout_height="50.25px">
+		-->
+		<Button android:id="@+id/Button01" android:layout_height="50.25px"
+			android:layout_width="53px" android:background="@drawable/cht"
+			android:layout_marginRight="3px" />
+		<Button android:layout_marginRight="3px" android:layout_height="50.25px"
+			android:id="@+id/Button02" android:layout_width="53px"
+			android:background="@drawable/chs" />
+
+		<Button android:layout_marginRight="3px" android:layout_height="50.25px"
+			android:id="@+id/Button03" android:layout_width="53px"
+			android:background="@drawable/eng" />
+		<Button android:layout_marginRight="3px" android:layout_height="50.25px"
+			android:id="@+id/Button04" android:layout_width="53px"
+			android:background="@drawable/jap" />
+		<Button android:layout_marginRight="3px" android:layout_height="50.25px"
+			android:id="@+id/Button05" android:layout_width="53px"
+			android:background="@drawable/kr" />
+
+	</LinearLayout>
+	<AbsoluteLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<Button android:id="@+id/InvisibleButton" android:layout_width="50dp"
+			android:layout_height="50dp" android:layout_x="0px" android:layout_y="0px"
+			android:background="@drawable/invisible" />
+	</AbsoluteLayout>
+
+</FrameLayout>
